@@ -1,4 +1,4 @@
-# Project 1 documentation
+# Project 2 documentation
 # Diffusing Bohemian Rhapsody
 Video interpolation and an exploration of the Stable Diffusion latent space
 
