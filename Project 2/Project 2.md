@@ -2,6 +2,8 @@
 # Diffusing Bohemian Rhapsody
 Video interpolation and an exploration of the Stable Diffusion latent space
 
+<p align="center"><img src="https://github.com/nhungoc1508/S23-IM3312-ArtIntel/blob/main/Project%202/showcase_rand_5.gif" width=500/></p>
+
 ## Introduction
 For this project, I created a music video for the song Bohemian Rhapsody by Queen. Using about 50 prompts as keyframes, I experimented with exploring Stable Diffusion’s textual latent space to interpolate between said frames. The final result is a continuously morphing video depicting a re-imagination of the song lyrics by ChatGPT and Stable Diffusion. By taking a closer and low-level look into the architecture of Stable Diffusion, we can start to unravel the black box of generative algorithms and to experiment with new creative ends.
 
