@@ -91,18 +91,17 @@ This screen gives more detailed information on a specific skill or knowledge of 
 Below are examples of Profile view followed by Skill view for the same self.
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/29029881/224488990-5b7c9599-88f3-40a5-8af1-0b00c7180de0.png"/>
+  <img src="https://user-images.githubusercontent.com/29029881/224489395-92e62b60-e5ed-42e6-b41e-2654bfd78ec7.png"/>
 </p>
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/29029881/224488990-5b7c9599-88f3-40a5-8af1-0b00c7180de0.png"/>
+  <img src="https://user-images.githubusercontent.com/29029881/224489420-62632cd2-0548-48ba-ad2f-054b7daa8c43.png"/>
 </p>
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/29029881/224488990-5b7c9599-88f3-40a5-8af1-0b00c7180de0.png"/>
+  <img src="https://user-images.githubusercontent.com/29029881/224489500-53fc2052-3b3f-4d50-b106-3977aa7b1f1f.png"/>
 </p>
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/29029881/224488990-5b7c9599-88f3-40a5-8af1-0b00c7180de0.png"/>
+  <img src="https://user-images.githubusercontent.com/29029881/224489512-b8f8b9b0-1890-4435-b5ac-9dcf1de7d078.png"/>
 </p>
-![Uploading Desktop - 3.png…]()
 
 ## ✅ Conclusion
 
