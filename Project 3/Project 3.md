@@ -75,8 +75,76 @@ Having the general plot with 5 main sections, I moved on to creating description
 By the end of this step, the sections were pretty well planned out with a good number of key scenes.
 
 ### Interpolating frames
+Recall that in the previous project, I conducted frame interpolation by converting a few prompts into numerical arrays and taking small steps from one array to the next. While this works fine with Stable Diffusion, it’s purely math so the result was visually very abstract. In this project, I wanted to generate more prompts in between to create an even smoother transition. Think of it as similar to array interpolation but instead of only math, I wanted the interpolation to make sense logically. I’m not sure if there is a term for it, so I call this semantic interpolation. The idea is that if I have two prompts describing scene A and scene B, can I ask ChatGPT to give me descriptions of what can possibly happen between those two scenes that make logical sense?
+
+This was an interesting experiment because there is no easy way to explain exactly what I wanted it to do. So I turned to examples. I gave examples of two prompts I wanted to conduct frame interpolation plus the interpolated frames in between then asked ChatGPT to do the same thing:
+
+> I want you to do something that I call frame interpolation. Here is how it works. I will give you descriptions of two consecutive key scenes and your job is to provide me with descriptions of frames that will fit in between those two prompts. Here is an example of frame interpolation (from 0 to 6) I want you to do:
+> 
+> 0: "a dystopian warzone with zombies, dark clouds in the sky, night",
+> 
+> 1: "a dystopian warzone, dark clouds in the sky",
+> 
+> 2: "a dystopian city, clouds in the sky",
+> 
+> 3: "a city",
+> 
+> 4: "a beautiful city",
+> 
+> 5: "a beautiful and modern city with blue sky",
+> 
+> 6: "a beautiful and modern city with blue sky and green trees"
+> 
+> Now I want to interpolate between the following two scenes:
+> "A deserted cityscape, with tall skyscrapers casting long shadows over the empty streets below"
+> 
+> and
+> 
+> "A driverless car moves slowly through an abandoned street, its headlights piercing through the thick fog that envelops the scene"
+> 
+> Give me a 4-step frame interpolation like the example. Keep the descriptions short and succinct like the examples I gave.
+
+After some further feedback, it could generally understand the task. For example:
+
+Prompts:
+
+FROM
+
+*"A driverless car moves slowly through an abandoned street, its headlights piercing through the thick fog that envelops the scene”*
+
+TO
+
+*"A close-up shot of a robotic arm repeatedly pressing a button on an abandoned control panel. The camera then pans out to show a large, empty factory floor with rows of deactivated machines."*
+
+Interpolated frames:
+
+> 0: "A driverless car moves slowly through an abandoned street, its headlights piercing through the thick fog that envelops the scene"
+> 
+> 1: "The car drives deeper into the fog, its headlights illuminating the abandoned buildings on either side"
+> 
+> 2: "The car passes by a graffiti-covered wall with faded colors, barely visible in the fog"
+> 
+> 3: "The car emerges from the fog and drives past rows of deactivated machines on an abandoned factory floor"
+> 
+> 4: "A close-up shot of a robotic arm repeatedly pressing a button on an abandoned control panel"
+> 
+> 5: "The camera pans out to show the deserted factory floor with rows of deactivated machines"
+> 
+> 6: "The camera continues to pan out, revealing the abandoned industrial complex"
+> 
+> 7: "The camera pulls back further, showing the desolate and overgrown wasteland that surrounds the complex."
+
+Two main remarks emerged from this step:
+
+- ChatGPT learns surprisingly well when provided with specific examples. I’d assume that to ChatGPT, the task itself is new and unseen before (I am having a hard time explaining what I want to do here). This is a similar process to teaching a human to learn: first by giving instructions, giving examples to clarify expectations, and giving feedback for improvements. ChatGPT is showing, in my opinion, pretty remarkable ability to learn new tasks from this process just as a human would.
+- The memory issue is still there, so I needed to give it examples every time.
 
 ### Generating Stable Diffusion prompts
+As the model is not the only entity learning from feedback in this whole process, I too have learned that giving examples worked better than giving pure instructions without good clarifications. I gave it specific examples of good Stable Diffusion prompts and asked it to generate Stable Diffusion prompts based on frame description it gave before:
+
+> I will give you descriptions and I want you to turn them into Stable Diffusion prompts. A prompt includes the original description and additional descriptors. An example is this: The original description is "The camera cuts to a darkened city street where a lone figure in a hooded coat walks past flickering streetlights" and the corresponding Stable Diffusion prompt is "Dark and gritty cityscape, ominous atmosphere, hooded figure walking in the night, low-key lighting, film noir-inspired, 1080p resolution, moody". 
+
+By the end of this step, I had a total of 81 prompts (the video is 2:40s long = 160s, which means I had 1 prompt for every 2 seconds, compared to the previous project: 48 prompts / 5:53s = 353s ~ 1 prompt every 7 second).
 
 ### Creating final video
 The rest of the process (encoding text prompts, interpolating mathematically, and generating images) was conducted using the same pipeline as [my previous project](https://github.com/nhungoc1508/S23-IM3312-ArtIntel/tree/main/Project%202).
