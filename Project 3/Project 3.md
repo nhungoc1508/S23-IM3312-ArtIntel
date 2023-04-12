@@ -45,19 +45,15 @@ This approach worked significantly better as the models started to give a wider 
 By the end of this step, I got a general plot I was satisfied with that included 5 main sections that connected and flew quite nicely in terms of themes and vibes. The 5 sections are as following:
 
 1. Opening montage:
-    
     We see a series of shots of abandoned technology and desolate landscapes. We see driverless cars roaming empty streets, screens displaying garbled messages, and darkened cities that have been abandoned by their inhabitants. The camera lingers on these scenes for just long enough to establish a sense of unease and disorientation.
     
 2. Virtual reality vignette:
-    
     We see a person sitting alone in a darkened room, wearing a virtual reality headset. As the camera moves in closer, we see that they are using the VR headset to connect with a loved one who has passed away. The virtual environment is warm and inviting at first, but as the scene progresses, we see that the VR experience is becoming more and more distorted, as if it's replacing the person's memories with something else entirely. The person becomes increasingly disoriented and distressed as they struggle to distinguish reality from the simulation.
     
 3. AI-enhanced body vignette:
-    
     We see a person standing in front of a mirror, looking at their reflection. They are using AI to enhance their own body, but as they do so, we see their sense of self slipping away, replaced by the cold, logical voice of the machine. The person becomes more and more robotic in their movements and speech, until they are barely recognizable as human.
     
 4. Abandoned cityscape:
-    
     We see a sweeping shot of a barren landscape, with the ruins of what was once a great city visible in the distance. The camera lingers on this shot for just long enough to establish a sense of the scale of the destruction, before cutting back to the person standing alone in the barren landscape, looking out at the ruins.
     
 5. Closing shot:
@@ -72,11 +68,17 @@ Overall, for this step, I had a number of general remarks:
 - Both learn from interactive feedback but they have limited ability to retain information. We talk about the “learning” aspect of AI a lot but we rarely mean it in the sense that the AI model is learning as it’s being deployed. The model is getting better with every generation after being modified and/or trained with bigger data etc. but is it learning from the users it’s interacting with? For humans, being able to incorporate new knowledge from our interactions with the world into our own experiences and history is a key feature of being intelligent. I think we are not expecting the same thing from AIs in order to call them intelligent (why so?).
 
 ### Generating key scenes
+Having the general plot with 5 main sections, I moved on to creating descriptions of key scenes for each section. For this step and all steps following this, I used ChatGPT. So for each section, I asked it to give me descriptions of a few key scenes within that section, with the quantity of scenes being up to it to decide. The longer the conversation went, the more it was inclined to forget earlier information and go completely off topic, so I kept reminding it. A query would look like this:
+
+> Let's dive deep into each section of our plot and plan it out in great details. I will give you the general plot of each section, and you give me descriptions of key scenes for that section. The section I want you to work on is [description of section].
+
+By the end of this step, the sections were pretty well planned out with a good number of key scenes.
 
 ### Interpolating frames
 
 ### Generating Stable Diffusion prompts
 
 ### Creating final video
+The rest of the process (encoding text prompts, interpolating mathematically, and generating images) was conducted using the same pipeline as [my previous project](https://github.com/nhungoc1508/S23-IM3312-ArtIntel/tree/main/Project%202).
 
 ## Discussion & conclusion
