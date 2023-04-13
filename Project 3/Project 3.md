@@ -143,3 +143,14 @@ By the end of this step, I had a total of 81 prompts (the video is 2:40s long = 
 The rest of the process (encoding text prompts, interpolating mathematically, and generating images) was conducted using the same pipeline as [my previous project](https://github.com/nhungoc1508/S23-IM3312-ArtIntel/tree/main/Project%202).
 
 ## Discussion & conclusion
+So in this project I explored the use of Large Language Models (LLMs) in creative tasks with the following two main questions:
+
+1. How creative can they be?
+
+Not very creative. Needs a lot of nudging to start generating new ideas.
+
+2. Can they learn from interactions and feedback in a direct and one-on-one human-bot settings?
+
+They can learn from feedback quite well either through
+- constant feedback throughout interactions with human
+- instructions and examples for entirely new tasks
