@@ -1,6 +1,8 @@
 # Project 3 documentation
 # Plug In
-Exploring Large Language Models for creative tasks
+More video interpolating & exploring Large Language Models for creative tasks
+
+<p align="center"><img src="https://github.com/nhungoc1508/S23-IM3312-ArtIntel/blob/main/Project%203/demo_5.gif" width=500/></p>
 
 ## Introduction
 For this project, I created a music video for the song Plug In… by Bastille. This project is an extension of my visual project with a focus on using LLMs to plan out the video in greater details. I explored the use of ChatGPT and Bing AI in two main tasks: 1) come up with a general plot, themes, and key sections of the video and 2) create more coherent prompts that allow for smoother visual transitions.
